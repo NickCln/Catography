@@ -645,3 +645,18 @@ body::-webkit-scrollbar-track {
 .second__middle-item:hover .middle__item-paw path{
    fill: #000;
 }
+
+
+@media (max-width: 991px) {
+   .first__top-left {
+      margin-top: 9rem;
+      line-height: 100%;
+   }
+   .first__bottom {
+      margin-top: 9rem;
+      line-height: 100%;
+   }
+   .creeping-line-inner {
+      margin-top: 0.5rem;
+   }
+}
