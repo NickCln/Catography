@@ -650,11 +650,9 @@ body::-webkit-scrollbar-track {
 @media (max-width: 991px) {
    .first__top-left {
       margin-top: 9rem;
-      line-height: 100%;
    }
    .first__bottom {
       margin-top: 9rem;
-      line-height: 100%;
    }
    .creeping-line-inner {
       margin-top: 0.5rem;
