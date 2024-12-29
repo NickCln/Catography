@@ -38,6 +38,20 @@ body {
 }
 
 
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 1);
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .2);
+}
+
 
 
 .main {
@@ -659,5 +673,4 @@ body {
 .second__middle-item:hover .middle__item-paw path{
    fill: #000;
 }
-
 
