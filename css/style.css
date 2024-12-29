@@ -454,7 +454,13 @@ body {
    overflow: hidden;
 }
 
+
 .third__center-cat {
+   width: 100%;
+   height: 100%;
+}
+
+.third__center-catgl {
    position: absolute;
    top: 50%;
    left: 50%;
@@ -462,7 +468,60 @@ body {
    z-index: 2;
    width: 12.5625rem;
    height: 11.375rem;
+   animation: catScale 6s infinite;
 }
+
+.third__center-gl {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 1;
+   width: 100%;
+   height: auto;
+   animation: glassesMove 6s infinite;
+   transition: all 0.3s ease;
+}
+
+
+@keyframes catScale {
+   0%, 40% {
+      transform: translate(-50%, -50%) scale(1);
+   }
+   45% {
+      transform: translate(-50%, -50%) scale(1.1);
+   }
+   80% {
+      transform: translate(-50%, -50%) scale(1.1);
+   }
+   85% {
+      transform: translate(-50%, -50%) scale(1);
+   }
+   100% {
+      transform: translate(-50%, -50%) scale(1);
+   }
+}
+
+@keyframes glassesMove {
+   0%, 30% {
+      transform: translate(100%, 100%);
+      opacity: 0;
+   }
+   35% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+   }
+   85% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+   }
+   90%, 100% {
+      transform: translate(100%, 100%);
+      opacity: 0;
+   }
+}
+
+
+
 
 .third__center-circle {
    width: 34.375rem;
@@ -601,44 +660,4 @@ body {
    fill: #000;
 }
 
-/* @keyframes pawVisibility {
-   0%, 13% {
-      fill: #000;
-   }
-   17% {
-      fill: #000;
-   }
-   20% {
-      fill: #000;
-   }
-   100% {
-      fill: transparent;
-   }
-}
-
-.second__middle-item .middle__item-paw path {
-   animation: pawVisibility 5s ease-in-out infinite;
-}
-
-.second__middle-item:nth-child(1) .middle__item-paw path {
-   animation-delay: 0s;
-}
-.second__middle-item:nth-child(2) .middle__item-paw path {
-   animation-delay: 0s;
-}
-.second__middle-item:nth-child(3) .middle__item-paw path {
-   animation-delay: 0.5s;
-}
-.second__middle-item:nth-child(4) .middle__item-paw path {
-   animation-delay: 1.5s;
-}
-.second__middle-item:nth-child(5) .middle__item-paw path {
-   animation-delay: 2.5s;
-}
-.second__middle-item:nth-child(6) .middle__item-paw path {
-   animation-delay: 3.5s;
-}
-.second__middle-item:nth-child(7) .middle__item-paw path {
-   animation-delay: 4.5s;
-} */
 
